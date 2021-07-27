@@ -56,9 +56,9 @@ const NewsletterPage = () => (
 <br />
 
             
-              <span style={{fontSize:'120%'}}><strong>Photographer's Newsletter</strong></span><br />
+              <span style={{fontSize:'120%'}}><strong>Get a quote right now</strong></span><br />
               
-              <span style={{fontSize:'85%'}}>join our photography newsletter</span><br /><br />
+              <span style={{fontSize:'85%'}}>Provide your email to get started</span><br /><br />
 
              <div className="signbox" style={{display:'flex',}}>
 
@@ -89,7 +89,7 @@ const NewsletterPage = () => (
               type="submit"
               style={{marginTop:'-8px'}}
             >
-              Join Now{" "}
+              Get Quote{" "}
               <span className="icon -right">
                 <RiSendPlane2Line />
               </span>

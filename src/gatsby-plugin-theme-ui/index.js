@@ -22,7 +22,11 @@ const theme = {
     modes: {
       dark: {
         text: "#f5f5f5",
-        background: "#222",
+        
+        // background: 'rgb(2,0,36)',
+        // background: "linear-gradient(#111212 40%, #232325  100%)",
+        background: "#070f31",
+        // background:"linear-gradient(#052d5c 40%, #070f31  100%)",
         primary: "var(--primary-color)",
         accent: "#5C2941",
         muted: "rgba(255, 255, 255, 0.7)",

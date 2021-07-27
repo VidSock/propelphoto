@@ -1,8 +1,8 @@
 ---
 template: index-page
 slug: /
-title: Lambert Photography
-tagline: Photography by Todd Lambert
+title: Next Level Websites
+tagline: Propel For Photographers
 featuredImage: /assets/4B4A9560.jpg
 cta:
   ctaText: See the photos

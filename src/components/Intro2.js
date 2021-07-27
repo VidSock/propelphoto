@@ -4,7 +4,7 @@ import styled from "styled-components"
 import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
 import { StaticImage } from "gatsby-plugin-image"
-// import Night319 from "../img/night316.jpg"
+import Night319 from "../../static/assets/popper.svg"
 const CustomBox = styled.div`
 
 .slider{object-fit: scale-down;}
@@ -39,9 +39,14 @@ const Intro2 = () => (
 
 <div className="" style={{zIndex:'-1', width:'', height:'', backgroundSize:'cover'}}>
   
-  <StaticImage style={{backgroundSize:'cover', width:'100%'}} className="" src="../img/4B4A9560.jpg" alt="Colorado at night with Twilightscapes" />
+  {/* <StaticImage style={{backgroundSize:'cover', width:'100%'}} className="" src="../img/4B4A9560.jpg" alt="Colorado at night with Twilightscapes" /> */}
 
-{/* <Night319 /> */}
+<Night319 />
+
+
+
+
+
 
   
   </div>

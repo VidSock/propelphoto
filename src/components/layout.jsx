@@ -8,7 +8,7 @@ import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
 // import { FaHandPointDown } from "react-icons/fa"
-import TwilightLogo from "../../static/assets/TSidebarHover.svg"
+import SiteLogo from "../../static/assets/propel-sleek-red.svg"
 import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
 // import { FiShare } from 'react-icons/fi';
@@ -99,7 +99,7 @@ export function Layout({ children }) {
 
 {/* <IoMdFingerPrint style={{fontSize:'60px', marginLeft:'20px' }}/> */}
 
-<span>MENU</span>
+{/* <span>MENU</span> */}
     <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
     <div className="spinner diagonal part-2"></div>
@@ -144,18 +144,18 @@ export function Layout({ children }) {
 
     <ul className="sidebarMenuInner post-card" style={{maxWidth:'250px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
- <li className="carta" style={{border:'none', margin:'1rem 0'}}>
+ <li className="carta" style={{border:'none', margin:'1rem 0 0 0', padding:'0'}}>
 <Link to="/"> 
-{/* <TwilightLogo /> */}
-<img src={iconimage} />
+<SiteLogo />
+{/* <img src={iconimage} /> */}
 </Link>
 
 
  </li>
- <li className="carto" style={{border:'none', margin:'1rem 0'}}>
+ <li className="carto" style={{border:'none', margin:'1rem 0 0 0', padding:'0'}}>
 <Link to="/">
-{/* <TwilightLogo /> */}
-<img src={iconimage} />
+<SiteLogo />
+{/* <img src={iconimage} /> */}
 </Link>
  </li>
  
@@ -166,19 +166,7 @@ export function Layout({ children }) {
 
 
 
- <li className="carto">
- <Link className="navbar-item txtshadow" to="/contact/">
-Contact Us<span></span>
-</Link>
 
-
-
-{/* </li>
-<li className="carta">
- <Link className="navbar-item txtshadow" to="/contact/">
-Contact Me<span>Ordering Questions?</span>
-</Link> */}
-</li>
 
 
 
@@ -188,14 +176,17 @@ Contact Me<span>Ordering Questions?</span>
        </li> */}
 
 
-      <li className="carto">
-              <Link className="navbar-item txtshadow" to="/about/">
-                About Us <span>Our story</span>
+<li className="carto" style={{textAlign:''}}>
+              <Link className="navbar-item txtshadow" to="/photos/">
+      
+              Propel your site<span style={{}}></span>
               </Link>
-      </li>
+      </li> 
+
+
 
       <li className="carto">
-      <Link className="navbar-item txtshadow" to="/blog/">Blog<span>Latest Posts</span></Link>
+      <Link className="navbar-item txtshadow" to="/blog/">The Launch Pad<span>Latest Launches</span></Link>
        </li>
 
 
@@ -212,14 +203,32 @@ Contact Me<span>Ordering Questions?</span>
               </Link>
       </li> */}
 
-
-
-      <li className="carto" style={{textAlign:'center'}}>
-              <Link className="navbar-item txtshadow" to="/photos/">
-      
-              View Photos <span style={{color:'var(--primary-color)',}}>start here</span>
+{/* <li className="carto">
+              <Link className="navbar-item txtshadow" to="/about/">
+                Next Level Web <span>Propel your site</span>
               </Link>
-      </li> 
+      </li> */}
+
+
+
+ 
+
+
+      <li className="carto">
+ <Link className="navbar-item txtshadow" to="/contact/">
+Get Started Now<span></span>
+</Link>
+
+
+
+{/* </li>
+<li className="carta">
+ <Link className="navbar-item txtshadow" to="/contact/">
+Contact Me<span>Ordering Questions?</span>
+</Link> */}
+</li>
+
+
     
       <li className="carta">
       <div style={{display:'flex', justifyContent:'center'}}>
@@ -237,11 +246,11 @@ Contact Me<span>Ordering Questions?</span>
       <li className="carto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center' }}>
   
       <Theme  />
-   <Link className="sherlock" to="/search" style={{marginRight:'20px', marginTop:'5px'}}>
+   {/* <Link className="sherlock" to="/search" style={{marginRight:'20px', marginTop:'5px'}}>
     <span className="carto"><SearchIcon /></span>
-   </Link>
+   </Link> */}
    
-  <div className="carto"><CartButton quantity={quantity} /></div>
+  {/* <div className="carto"><CartButton quantity={quantity} /></div> */}
 
 
         </li>
